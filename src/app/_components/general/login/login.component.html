@@ -1,0 +1,10 @@
+<div *ngIf="form">
+  <h1>登入</h1>
+  <input #username type="text" placeholder="帳號" [(ngModel)]="form.username" /> <br />
+  <br />
+  <input #password type="password" placeholder="密碼" [(ngModel)]="form.password" /> <br />
+  <br />
+  <button (click)="submitLogin()">登入</button>
+</div>
+
+
